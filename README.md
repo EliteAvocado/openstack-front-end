@@ -1,6 +1,6 @@
 # Openstack Front-End
 
-A [frontend for Openstack](./gui) using Nana and TinyXML2, as well as a [server](./server) [client](./client) modell using Boost Asio and MySQL.
+A [frontend for Openstack](./gui) using Nana and TinyXML2, as well as a [server](./server) [client](./client) architecture using Boost Asio and MySQL.
 
 # Disclaimer
 
