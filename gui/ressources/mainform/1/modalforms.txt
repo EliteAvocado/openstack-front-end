@@ -1,0 +1,4 @@
+Warning
+Are you sure that you want to shutdown the PC?
+Warning
+Are you sure that you want to restart the PC?

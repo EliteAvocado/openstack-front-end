@@ -1,0 +1,2 @@
+Informations: 
+Here you can accomplish a connection to a Windows instance. Recommended: Standard

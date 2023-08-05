@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MainForm>
+    <Title lang="English">GUI Prototype</Title>
+    <Title lang="German">GUI Prototyp</Title>
+    <Config>
+        <Server>
+            <Ip>localhost</Ip>
+            <Port>1111</Port>
+        </Server>
+        <Client>
+            <Id>100</Id>
+			<Delimiter>#</Delimiter>
+        </Client>
+        <Language>English</Language>
+    </Config>
+    <Components>
+        <Button name="Shutdown">
+            <Title lang="English">Shutdown</Title>
+            <Title lang="German">Herunterfahren</Title>
+        </Button>
+        <Button name="Restart">
+            <Title lang="English">Restart</Title>
+            <Title lang="German">Neustarten</Title>
+        </Button>
+        <Button name="ChangeLang">
+            <Title lang="English">Change Language</Title>
+            <Title lang="German">Sprache Ändern</Title>
+        </Button>
+        <TabBar name="NavBar">
+            <TabPage name="Start">
+                <Title lang="English">Welcome</Title>
+                <Title lang="German">Willkommen</Title>
+                <Label name="Caption">
+                    <Text lang="English">Message of the day:</Text>
+                    <Text lang="German">Nachricht des Tages:</Text>
+                </Label>
+                <Label name="Message">
+                    <Text lang="English">Here could be your advertisement. Here could be your advertisement. Here could be your advertisement.</Text>
+                    <Text lang="German">Hier könnte Ihre Werbung stehen. Hier könnte Ihre Werbung stehen. Hier könnte Ihre Werbung stehen.</Text>
+                </Label>
+            </TabPage>
+            <TabPage name="Linux">
+                <Title lang="English">Linux</Title>
+                <Title lang="German">Linux</Title>
+                <Config>
+                    <Request name="Instance">
+                        <Command>GetInstancesByOS</Command>
+                        <Param>Linux</Param>
+                    </Request>
+                    <Request name="Connect">
+                        <Command>ConnectToInstance</Command>
+                    </Request>
+                    <Request name="Disconnect">
+                        <Command>DisconnectFromInstance</Command>
+                    </Request>
+                </Config>
+                <Components>
+                    <Button name="Standard">
+                        <Title lang="English">Standard</Title>
+                        <Title lang="German">Standard</Title>
+                    </Button>
+                    <Button name="Expert">
+                        <Title lang="English">Expert</Title>
+                        <Title lang="German">Experte</Title>
+                    </Button>
+                    <Label name="Info">
+                        <Text lang="English">Informations:</Text>
+                        <Text lang="German">Informationen:</Text>
+                    </Label>
+                    <Label name="InfoDesc">
+                        <Text lang="English">Here you can accomplish a connection to a Linux instance. Recommended: Standard</Text>
+                        <Text lang="German">Hier können Sie eine Verbindung zu einer Linux-Instanz herstellen. Empfohlen: Standard</Text>
+                    </Label>
+                </Components>
+                <Alternate name="Expert">
+                    <Components>
+                        <Button name="Connect">
+                            <Title lang="English">Connect</Title>
+                            <Title lang="German">Verbinden</Title>
+                        </Button>
+                        <Button name="Cancel">
+                            <Title lang="English">Cancel</Title>
+                            <Title lang="German">Abbrechen</Title>
+                        </Button>
+                        <Label name="Caption">
+                            <Text lang="English">Choose Instance:</Text>
+                            <Text lang="German">Wähle Instanz::</Text>
+                        </Label>
+                        <Label name="Info">
+                            <Text lang="English">Informations:</Text>
+                            <Text lang="German">Informationen:</Text>
+                        </Label>
+                        <Label name="InfoDesc">
+                            <Text lang="English">You've chosen the following instance:</Text>
+                            <Text lang="German">Sie haben die folgende Instanz ausgewählt:</Text>
+                        </Label>
+                        <ComboBox name="Instances">
+                            <item lang="English">Instance 1</item>
+                            <item lang="German">Instanz 1</item>
+                            <item lang="English">Instance 2</item>
+                            <item lang="German">Instanz 2</item>
+                            <item lang="English">Instance 3</item>
+                            <item lang="German">Instanz 3</item>
+                        </ComboBox>
+                    </Components>
+                </Alternate>
+            </TabPage>
+            <TabPage name="Windows">
+                <Title lang="English">Windows</Title>
+                <Title lang="German">Windows</Title>
+                <Config>
+                    <Request name="Instance">
+                        <Command>GetInstancesByOS</Command>
+                        <Param>Windows</Param>
+                    </Request>
+                    <Request name="Connect">
+                        <Command>ConnectToInstance</Command>
+                    </Request>
+                    <Request name="Disconnect">
+                        <Command>DisconnectFromInstance</Command>
+                    </Request>
+                </Config>
+                <Components>
+                    <Button name="Standard">
+                        <Title lang="English">Standard</Title>
+                        <Title lang="German">Standard</Title>
+                    </Button>
+                    <Button name="Expert">
+                        <Title lang="English">Expert</Title>
+                        <Title lang="German">Experte</Title>
+                    </Button>
+                    <Label name="Info">
+                        <Text lang="English">Informations:</Text>
+                        <Text lang="German">Informationen:</Text>
+                    </Label>
+                    <Label name="InfoDesc">
+                        <Text lang="English">Here you can accomplish a connection to a Windows instance. Recommended: Standard</Text>
+                        <Text lang="German">Hier können Sie eine Verbindung zu einer Windows-Instanz herstellen. Empfohlen: Standard</Text>
+                    </Label>
+                </Components>
+                <Alternate name="Expert">
+                    <Components>
+                        <Button name="Connect">
+                            <Title lang="English">Connect</Title>
+                            <Title lang="German">Verbinden</Title>
+                        </Button>
+                        <Button name="Cancel">
+                            <Title lang="English">Cancel</Title>
+                            <Title lang="German">Abbrechen</Title>
+                        </Button>
+                        <Label name="Caption">
+                            <Text lang="English">Choose Instance:</Text>
+                            <Text lang="German">Wähle Instanz::</Text>
+                        </Label>
+                        <Label name="Info">
+                            <Text lang="English">Informations:</Text>
+                            <Text lang="German">Informationen:</Text>
+                        </Label>
+                        <Label name="InfoDesc">
+                            <Text lang="English">You've chosen the following instance:</Text>
+                            <Text lang="German">Sie haben die folgende Instanz ausgewählt:</Text>
+                        </Label>
+                        <ComboBox name="Instances">
+                            <item lang="English">Instance 1</item>
+                            <item lang="German">Instanz 1</item>
+                            <item lang="English">Instance 2</item>
+                            <item lang="German">Instanz 2</item>
+                            <item lang="English">Instance 3</item>
+                            <item lang="German">Instanz 3</item>
+                        </ComboBox>
+                    </Components>
+                </Alternate>
+            </TabPage>
+            <TabPage name="TerminalSim">
+                <Title lang="English">Terminal Simulator</Title>
+                <Title lang="German">Terminal Simulator</Title>
+                <Components>
+                    <Button name="Login">
+                        <Title lang="English">Log In</Title>
+                        <Title lang="German">Anmelden</Title>
+                    </Button>
+                    <Label name="Info">
+                        <Text lang="English">Informations:</Text>
+                        <Text lang="German">Informationen:</Text>
+                    </Label>
+                    <Label name="InfoDesc">
+                        <Text lang="English">You're not logged in as an administrator.</Text>
+                        <Text lang="German">Sie sind nicht als Administrator angemeldet.</Text>
+                    </Label>
+                </Components>
+                <SubForms>
+                    <ModalForm name="Login">
+                        <Title lang="English">Login</Title>
+                        <Title lang="German">Anmeldung</Title>
+                        <Config>
+                            <Admin>
+                                <User>admin</User>
+                                <Password>test1234</Password>
+                            </Admin>
+                        </Config>
+                        <Button name="Confirm">
+                            <Title lang="English">Confirm</Title>
+                            <Title lang="German">Bestätigen</Title>
+                        </Button>
+                        <Button name="Cancel">
+                            <Title lang="English">Cancel</Title>
+                            <Title lang="German">Abbrechen</Title>
+                        </Button>
+                        <Label name="User">
+                            <Text lang="English">Username:</Text>
+                            <Text lang="German">Nutzername:</Text>
+                        </Label>
+                        <Label name="Pwd">
+                            <Text lang="English">Password:</Text>
+                            <Text lang="German">Passwort:</Text>
+                        </Label>
+                    </ModalForm>
+                </SubForms>
+                <Alternate name="Logged">
+                    <Components>
+                        <Button name="Terminal">
+                            <Title lang="English">Start Terminal</Title>
+                            <Title lang="German">Terminal Starten</Title>
+                        </Button>
+                        <Label name="Info">
+                            <Text lang="English">Informations:</Text>
+                            <Text lang="German">Informationen:</Text>
+                        </Label>
+                        <Label name="InfoDesc">
+                            <Text lang="English">You're logged in as an administrator.</Text>
+                            <Text lang="German">Sie sind als Administrator angemeldet.</Text>
+                        </Label>
+                    </Components>
+                </Alternate>
+            </TabPage>
+            <TabPage name="AdditionalFunc">
+                <Title lang="English">Additional Functions</Title>
+                <Title lang="German">Weitere Funktionen</Title>
+                <Components>
+                    <Button name="Password">
+                        <Title lang="English">Set password</Title>
+                        <Title lang="German">Passwort setzen</Title>
+                    </Button>
+                    <Label name="Info">
+                        <Text lang="English">Informations:</Text>
+                        <Text lang="German">Informationen:</Text>
+                    </Label>
+                    <Label name="InfoDesc">
+                        <Text lang="English">Here you get access to a bunch of useful tools and functions.</Text>
+                        <Text lang="German">Hier erhalten Sie Zugriff auf eine Vielzahl nützlicher Funktionen.</Text>
+                    </Label>
+                </Components>
+                <Alternate name="Password">
+                    <Components>
+                        <Button name="ServicePort">
+                            <Title lang="English">Service Portal</Title>
+                            <Title lang="German">Service Portal</Title>
+                        </Button>
+                        <Button name="Webmail">
+                            <Title lang="English">Web Mail Service</Title>
+                            <Title lang="German">Web Mail Service</Title>
+                        </Button>
+                        <Label name="Info">
+                            <Text lang="English">Informations:</Text>
+                            <Text lang="German">Informationen:</Text>
+                        </Label>
+                        <Label name="InfoDesc">
+                            <Text lang="English">Here you can reset your password.</Text>
+                            <Text lang="German">Hier können Sie ihr Passwort neusetzen.</Text>
+                        </Label>
+                    </Components>
+                </Alternate>
+            </TabPage>
+        </TabBar>
+    </Components>
+    <SubForms>
+        <ModalForm name="Shutdown">
+            <Title lang="English">Warning</Title>
+            <Title lang="German">Achtung</Title>
+            <Label name="Question">
+                <Text lang="English">Are you sure that you want to shutdown the PC?</Text>
+                <Text lang="German">Sind Sie sicher, dass Sie den Rechner herunterfahren möchten?</Text>
+            </Label>
+        </ModalForm>
+        <ModalForm name="Restart">
+            <Title lang="English">Warning</Title>
+            <Title lang="German">Achtung</Title>
+            <Label name="Question">
+                <Text lang="English">Are you sure that you want to restart the PC?</Text>
+                <Text lang="German">Sind Sie sicher, dass Sie den Rechner neustarten möchten?</Text>
+            </Label>
+        </ModalForm>
+        <ModalForm name="Language">
+            <Title lang="English">Language Selection</Title>
+            <Title lang="German">Sprachauswahl</Title>
+            <Button name="Ok">
+                <Title lang="English">Ok</Title>
+                <Title lang="German">Ok</Title>
+            </Button>
+            <Button name="Cancel">
+                <Title lang="English">Cancel</Title>
+                <Title lang="German">Abbrechen</Title>
+            </Button>
+            <Label name="Caption">
+                <Text lang="English">Choose Language:</Text>
+                <Text lang="German">Wähle Sprache:</Text>
+            </Label>
+            <Label name="Info">
+                <Text lang="English">Informations:</Text>
+                <Text lang="German">Informationen:</Text>
+            </Label>
+            <Label name="InfoDesc">
+                <Text lang="English">You've chosen the following language:</Text>
+                <Text lang="German">Es wurde die folgende Sprache ausgewählt:</Text>
+            </Label>
+            <ComboBox name="Langs">
+                <item lang="English">German</item>
+                <item lang="English">English</item>
+                <item lang="German">Deutsch</item>
+                <item lang="German">Englisch</item>
+            </ComboBox>
+        </ModalForm>
+    </SubForms>
+</MainForm>

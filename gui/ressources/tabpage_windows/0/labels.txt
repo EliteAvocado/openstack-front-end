@@ -1,0 +1,2 @@
+Informationen: 
+Hier können Sie eine Verbindung zu einer Windows-Instanz herstellen. Empfohlen: Standard

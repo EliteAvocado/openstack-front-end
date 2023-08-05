@@ -1,0 +1,5 @@
+Welcome
+Linux
+Windows
+Terminal Simulator
+Additional Functions
