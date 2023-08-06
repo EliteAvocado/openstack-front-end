@@ -1,8 +1,8 @@
-# Openstack Front-End
+# Openstack Front-End with Server-Client Architecture
 
-A [frontend for Openstack](./gui) using Nana and TinyXML2, as well as a [server](./server) [client](./client) architecture using Boost Asio and MySQL.
+A [frontend](./gui) for Openstack using Nana and TinyXML2, as well as a [server](./server)-[client](./client) architecture using Boost Asio and MySQL.
 
-It allows the connection to multiple virtual machines that are managed using OpenStack.
+It allows the user to connect to multiple virtual machines that are managed via OpenStack.
 
 # Disclaimer
 
