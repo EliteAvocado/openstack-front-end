@@ -1,4 +1,4 @@
-# Openstack Front-End with Server-Client Architecture
+# Openstack Front-End with Server-Client Architecture [![LICENSE](https://img.shields.io/badge/LICENSE-Apache_2.0-green)](./LICENSE)
 
 A [frontend](./gui) for Openstack using Nana and TinyXML2, as well as a [server](./server)-[client](./client) architecture using Boost Asio and MySQL.
 
